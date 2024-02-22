@@ -1,0 +1,37 @@
+from django.db import models
+
+class Aircraft(models.Model):
+    AircraftID=models.CharField(max_length=100)
+    EquipmentType=models.CharField(max_length=100)
+    TypeCode=models.CharField(max_length=100)
+    Year=models.CharField(max_length=100)
+    Make=models.CharField(max_length=100)
+    Model=models.CharField(max_length=100)
+    Category=models.CharField(max_length=100)
+    Class=models.CharField(max_length=100)
+    GearType=models.CharField(max_length=100)
+    EngineType=models.CharField(max_length=100)
+    Complex=models.CharField(max_length=100)
+    HighPerformance=models.CharField(max_length=100)
+    Pressurized=models.CharField(max_length=100)
+    TAA=models.CharField(max_length=100)
+
+
+class Flight(models.Model):
+    Date=models.CharField(max_length=100)
+    FlightID=models.CharField(max_length=100)
+    From=models.CharField(max_length=100)
+    To=models.CharField(max_length=100)
+    Route=models.CharField(max_length=100)
+    TimeOut=models.CharField(max_length=100)
+    TimeOff=models.CharField(max_length=100)
+    TimeOn=models.CharField(max_length=100)
+    Timein=models.CharField(max_length=100)
+    OnDuty=models.CharField(max_length=100)
+    OffDuty=models.CharField(max_length=100)
+    TotalTime=models.CharField(max_length=100)
+    minPICUS=models.CharField(max_length=100)
+    SIC=models.CharField(max_length=100)
+    inNight=models.CharField(max_length=100)
+    Solo=models.CharField(max_length=100)
+    CrossCountry=models.CharField(max_length=100)

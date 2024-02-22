@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Import JSON</title>
+</head>
+<body>
+    <h1>Import JSON</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="json_file">
+        <button type="submit">Import</button>
+    </form>
+</body>
+</html>
